@@ -33,9 +33,17 @@
 
         body {
             <h3>🎵 آهنگ بوم بوم</h3>
-<audio controls="controls" style="width:320px; height:60px; display:block; background:white;">
+
+<button onclick="document.getElementById('boom').play()">
+  ▶️ پخش آهنگ
+</button>
+
+<button onclick="document.getElementById('boom').pause()">
+  ⏸ توقف
+</button>
+
+<audio id="boom" preload="auto">
   <source src="https://raw.githubusercontent.com/araz1388/index.html-araz-logo.png-/main/Boom%20Boom%282%29.mp3" type="audio/mpeg">
-  پخش آهنگ در این مرورگر پشتیبانی نمی‌شود.
 </audio>
             font-family: 'Vazirmatn', sans-serif;
             background: var(--black);
