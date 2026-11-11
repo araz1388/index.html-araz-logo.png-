@@ -1,29 +1,34 @@
-ح<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head><meta name="google-site-verification" content="_J8QshJxdiVc9COrCZuT0gLDUBWRW8S-vB1C5snVg1w" />
-    <img src="file_00000000a5e48243b2857d2e3b129a06.png" alt="آراز علیپور" width="300">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آراز علیپور | آهنگ Sakla Beni و Boom Boom</title>
-    <meta name="description" content="سایت رسمی آراز علیپور - خواننده جوان ایرانی">
+
+    <meta name="google-site-verification" content="_J8QshJxdiVc9COrCZuT0gLDUBWRW8S-vB1C5snVg1w">
+
+    <title>آراز علیپور | خواننده | آهنگ Sakla Beni و Boom Boom</title>
+    <meta name="description" content="وب‌سایت آراز علیپور؛ معرفی خواننده، آهنگ‌های Boom Boom و Sakla Beni و گوش دادن آنلاین به موسیقی.">
+
+    <meta name="theme-color" content="#0a0a0a">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --gold: #D4AF37;
-            --gold-light: #F5D76E;
-            --gold-dark: #B8860B;
-            --black: #0a0a0a;
-            --dark: #111111;
-            --darker: #1a1a1a;
-            --gray: #888;
-            --white: #f5f5f5;
+            --gold: #d4af37;
+            --light-gold: #f5df91;
+            --black: #080808;
+            --dark: #141414;
+            --gray: #aaa;
+            --white: #fff;
         }
 
-        * 
+        * {
             margin: 0;
-            padding:{ 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
@@ -32,674 +37,423 @@
         }
 
         body {
-            
+            background: var(--black);
+            color: var(--white);
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.9;
         }
 
-        /* Header / Nav */
         header {
-            position: fixed;
+            position: sticky;
             top: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(10, 10, 10, 0.92);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-            transition: all 0.3s ease;
+            z-index: 100;
+            background: rgba(8,8,8,.96);
+            border-bottom: 1px solid rgba(212,175,55,.3);
         }
 
         nav {
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 1100px;
+            margin: auto;
+            padding: 12px 20px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: center;
-            padding: 0.9rem 1.5rem;
         }
 
-        .logo-nav {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-
-        .logo-nav img {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            border: 2px solid var(--gold);
-            object-fit: cover;
-        }
-
-        .logo-nav span {
-            font-weight: 700;
-            font-size: 1.15rem;
+        .brand {
             color: var(--gold);
-            letter-spacing: 0.5px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-decoration: none;
         }
 
         .nav-links {
             display: flex;
-            gap: 1.8rem;
+            gap: 22px;
             list-style: none;
         }
 
         .nav-links a {
-            color: var(--white);
+            color: white;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-            position: relative;
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            right: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: width 0.3s;
+            font-size: .9rem;
         }
 
         .nav-links a:hover {
             color: var(--gold);
         }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--gold);
-            font-size: 1.6rem;
-            cursor: pointer;
-        }
-
-        /* Hero */
         .hero {
-            min-height: 100vh;
+            min-height: 85vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            position: relative;
-            background: radial-gradient(ellipse at center, #1a1508 0%, #0a0a0a 70%);
-            padding: 6rem 1.5rem 4rem;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
+            padding: 65px 20px;
+            background: radial-gradient(ellipse at center, #30250b 0%, #111 45%, #080808 80%);
         }
 
         .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
+            max-width: 750px;
         }
 
         .hero-logo {
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 1.8rem;
+            width: 190px;
+            height: 190px;
             border-radius: 50%;
-            border: 3px solid var(--gold);
-            box-shadow: 0 0 40px rgba(212, 175, 55, 0.35), 0 0 80px rgba(212, 175, 55, 0.15);
             object-fit: cover;
-            animation: glow 3s ease-in-out infinite alternate;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 45px rgba(212,175,55,.35);
+            margin-bottom: 22px;
         }
 
-        @keyframes glow {
-            from { box-shadow: 0 0 30px rgba(212, 175, 55, 0.3), 0 0 60px rgba(212, 175, 55, 0.1); }
-            to { box-shadow: 0 0 50px rgba(212, 175, 55, 0.5), 0 0 100px rgba(212, 175, 55, 0.2); }
-        }
-
-        .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
+        h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
             color: var(--gold);
-            margin-bottom: 0.4rem;
-            letter-spacing: 1px;
+            font-weight: 800;
+            line-height: 1.5;
         }
 
-        .hero .subtitle {
-            font-size: 1.35rem;
-            color: var(--gold-light);
-            font-weight: 400;
-            margin-bottom: 1.2rem;
-            letter-spacing: 3px;
+        .english-name {
+            color: var(--light-gold);
+            font-size: 1.3rem;
+            letter-spacing: 5px;
+            direction: ltr;
+            margin-bottom: 15px;
         }
 
-        .hero .tagline {
-            font-size: 1.05rem;
-            color: var(--gray);
-            margin-bottom: 2.5rem;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-btns {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
+        .tagline {
+            color: #ccc;
+            margin-bottom: 28px;
         }
 
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 0.85rem 1.8rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.95rem;
+            display: inline-block;
+            padding: 11px 25px;
+            margin: 5px;
+            border-radius: 30px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-family: inherit;
+            font-weight: 700;
+            transition: .3s;
         }
 
-        .btn-primary {
-            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-            color: var(--black);
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+        .btn-gold {
+            background: linear-gradient(135deg, #f5df91, #b8860b);
+            color: #080808;
         }
 
         .btn-outline {
-            background: transparent;
+            border: 1px solid var(--gold);
             color: var(--gold);
-            border: 2px solid var(--gold);
         }
 
-        .btn-outline:hover {
-            background: var(--gold);
-            color: var(--black);
+        .btn:hover {
             transform: translateY(-3px);
         }
 
-        /* Sections */
         section {
-            padding: 5rem 1.5rem;
-            max-width: 1100px;
-            margin: 0 auto;
+            max-width: 1050px;
+            margin: auto;
+            padding: 65px 20px;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.2rem;
-            font-weight: 700;
             color: var(--gold);
-            position: relative;
-            display: inline-block;
-            padding-bottom: 0.6rem;
+            font-size: 2rem;
+            margin-bottom: 35px;
         }
 
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            transform: translateX(50%);
-            width: 60px;
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 65px;
             height: 3px;
-            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            background: var(--gold);
+            margin: 8px auto;
         }
 
-        /* About */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1.4fr;
-            gap: 3rem;
-            align-items: center;
+        .about-box {
+            background: var(--dark);
+            border: 1px solid rgba(212,175,55,.2);
+            border-radius: 18px;
+            padding: 30px;
+            color: #ddd;
         }
 
-        .about-image {
-            text-align: center;
+        .about-box p {
+            margin-bottom: 15px;
         }
 
-        .about-image img {
-            width: 100%;
-            max-width: 320px;
-            border-radius: 20px;
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.5);
-        }
-
-        .about-text p {
-            margin-bottom: 1.2rem;
-            color: #ccc;
-            font-size: 1.05rem;
-        }
-
-        .about-text .highlight {
-            color: var(--gold-light);
-            font-weight: 500;
-        }
-
-        .stats {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-item .number {
-            font-size: 1.8rem;
+        .highlight {
+            color: var(--light-gold);
             font-weight: 700;
-            color: var(--gold);
         }
 
-        .stat-item .label {
-            font-size: 0.85rem;
-            color: var(--gray);
-        }
-
-        /* Music / Socials */
         .music-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .music-card {
-            background: var(--darker);
-            border: 1px solid rgba(212, 175, 55, 0.15);
-            border-radius: 16px;
-            padding: 2rem;
+            background: linear-gradient(145deg, #1b1b1b, #101010);
+            border: 1px solid rgba(212,175,55,.3);
+            border-radius: 18px;
+            padding: 22px;
             text-align: center;
-            transition: all 0.3s ease;
+            transition: .3s;
         }
 
         .music-card:hover {
+            transform: translateY(-5px);
             border-color: var(--gold);
-            transform: translateY(-6px);
-            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.12);
+            box-shadow: 0 10px 30px rgba(212,175,55,.12);
         }
 
-        .music-card .icon {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
+        .cover {
+            width: 100%;
+            max-width: 230px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 2px solid var(--gold);
+            margin-bottom: 15px;
         }
 
         .music-card h3 {
             color: var(--gold);
-            font-size: 1.25rem;
-            margin-bottom: 0.6rem;
+            font-size: 1.35rem;
+            margin-bottom: 10px;
         }
 
-        .music-card p {
-            color: var(--gray);
-            font-size: 0.9rem;
-            margin-bottom: 1.3rem;
+        audio {
+            width: 100%;
+            margin-top: 15px;
         }
 
-        .music-card a {
-            display: inline-block;
-            color: var(--black);
-            background: var(--gold);
-            padding: 0.55rem 1.4rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-        }
-
-        .music-card a:hover {
-            background: var(--gold-light);
-            transform: scale(1.05);
-        }
-
-        /* Gallery Placeholder */
-        .gallery-note {
-            background: var(--darker);
-            border: 1px dashed rgba(212, 175, 55, 0.3);
-            border-radius: 16px;
-            padding: 3rem 2rem;
+        .social-box {
+            background: var(--dark);
+            border: 1px solid rgba(212,175,55,.25);
+            border-radius: 18px;
+            padding: 30px;
             text-align: center;
-            color: var(--gray);
-        }
-
-        .gallery-note p {
-            margin-bottom: 0.8rem;
-        }
-
-        .gallery-note a {
-            color: var(--gold);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .gallery-note a:hover {
-            text-decoration: underline;
-        }
-
-        /* Contact */
-        .contact-box {
-            background: linear-gradient(145deg, #1a1508, #111);
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            border-radius: 20px;
-            padding: 3rem 2rem;
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-box h3 {
-            color: var(--gold);
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .phone-number {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--gold-light);
-            direction: ltr;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            letter-spacing: 1px;
-        }
-
-        .phone-number a {
-            color: inherit;
-            text-decoration: none;
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.2rem;
-            margin-top: 1.5rem;
             flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
         }
 
         .social-links a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.3);
             color: var(--gold);
-            padding: 0.7rem 1.3rem;
-            border-radius: 50px;
+            border: 1px solid var(--gold);
+            padding: 8px 20px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: all 0.3s;
+            transition: .3s;
         }
 
         .social-links a:hover {
             background: var(--gold);
             color: var(--black);
-            transform: translateY(-3px);
         }
 
-        /* Footer */
-        footer {
-            background: #080808;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            padding: 2rem 1.5rem;
+        .contact-box {
+            background: linear-gradient(145deg, #251d0b, #141414);
+            border: 1px solid var(--gold);
+            border-radius: 18px;
+            padding: 30px;
             text-align: center;
-            color: var(--gray);
-            font-size: 0.9rem;
         }
 
-        footer .gold {
+        .phone {
+            display: inline-block;
+            color: var(--light-gold);
+            font-size: 1.5rem;
+            font-weight: 700;
+            direction: ltr;
+            text-decoration: none;
+            margin: 12px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 15px;
+            background: #050505;
+            border-top: 1px solid rgba(212,175,55,.2);
+            color: var(--gray);
+        }
+
+        footer span {
             color: var(--gold);
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
+        @media(max-width: 650px) {
+            nav {
+                flex-wrap: wrap;
+            }
+
             .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                left: 0;
-                background: rgba(10, 10, 10, 0.98);
-                flex-direction: column;
-                padding: 1.5rem;
-                gap: 1.2rem;
-                border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+                padding-top: 12px;
             }
 
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
-            .hero h1 {
-                font-size: 2.3rem;
+            .hero {
+                min-height: 75vh;
             }
 
             .hero-logo {
-                width: 170px;
-                height: 170px;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .about-image img {
-                max-width: 260px;
+                width: 155px;
+                height: 155px;
             }
 
             section {
-                padding: 3.5rem 1.2rem;
+                padding: 45px 16px;
+            }
+
+            .about-box {
+                padding: 20px;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="#" class="logo-nav">
-                <img src="araz-logo.png" alt="آراز علیپور">
-                <span>آراز علیپور</span>
-            </a>
-            <button class="menu-toggle" onclick="toggleMenu()" aria-label="منو">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about" onclick="closeMenu()">درباره من</a></li>
-                <li><a href="#music" onclick="closeMenu()">آهنگ‌ها</a></li>
-                <li><a href="#gallery" onclick="closeMenu()">گالری</a></li>
-                <li><a href="#contact" onclick="closeMenu()">تماس</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <a class="brand" href="#">ARAZ ALIPOUR</a>
+        <ul class="nav-links">
+            <li><a href="#about">بیوگرافی</a></li>
+            <li><a href="#music">آهنگ‌ها</a></li>
+            <li><a href="#social">شبکه‌های اجتماعی</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Hero -->
-    <section class="hero">
+<main>
+
+    <div class="hero">
         <div class="hero-content">
-            <img src="araz-logo.png" alt="آراز علیپور" class="hero-logo">
+            <img class="hero-logo"
+                 src="file_00000000a5e48243b2857d2e3b129a06.png"
+                 alt="عکس آراز علیپور">
+
             <h1>آراز علیپور</h1>
-            <p class="subtitle">ARAZ ALIPOUR</p>
-            <p class="tagline">خواننده جوان ایرانی • از ۷ سالگی تا امروز</p>
-            <div class="hero-btns">
-                <a href="#music" class="btn btn-primary">گوش دادن به آهنگ‌ها</a>
-                <a href="#contact" class="btn btn-outline">تماس با من</a>
-            </div>
-        </div>
-    </section>
+            <div class="english-name">ARAZ ALIPOUR</div>
 
-    <!-- About -->
+            <p class="tagline">
+                به دنیای موسیقی آراز علیپور خوش آمدید
+            </p>
+
+            <a href="#music" class="btn btn-gold">گوش دادن به آهنگ‌ها</a>
+            <a href="#about" class="btn btn-outline">درباره من</a>
+        </div>
+    </div>
+
     <section id="about">
-        <div class="section-title">
-            <h2>بیوگرافی</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="araz-logo.png" alt="آراز علیپور">
-            </div>
-            <div class="about-text">
-                <p>
-                    <span class="highlight">آراز علیپور</span> خواننده جوان و بااستعداد ایرانی است که از سن <span class="highlight">۷ سالگی</span> موسیقی را به صورت حرفه‌ای آغاز کرد.
-                </p>
-                <p>
-                    او در طول این سال‌ها در <span class="highlight">شبکه‌های مختلف تلویزیونی ایران</span> به اجرای برنامه پرداخته و همچنین در <span class="highlight">استادیوم‌ها و ورزشگاه‌ها</span> روی صحنه رفته است.
-                </p>
-                <p>
-                    آراز در <span class="highlight">فستیوال‌های مختلف ایرانی</span> و اجراهای متعدد حضور داشته و با صدای گرم و انرژی بالای خود توانسته مخاطبان زیادی را جذب کند.
-                </p>
-                <p>
-                    اکنون در سن <span class="highlight">۱۷ سالگی</span>، همچنان با انگیزه و پشتکار به فعالیت‌های هنری خود ادامه می‌دهد.
-                </p>
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="number">+۱۰</div>
-                        <div class="label">سال تجربه</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="number">۱۷</div>
-                        <div class="label">سال سن</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="number">∞</div>
-                        <div class="label">عشق به موسیقی</div>
-                    </div>
-                </div>
-            </div>
+        <h2 class="section-title">بیوگرافی</h2>
+
+        <div class="about-box">
+            <p>
+                <span class="highlight">آراز علیپور</span>
+                خواننده جوان ایرانی است که از سن ۷ سالگی موسیقی را آغاز کرده است.
+            </p>
+
+            <p>
+                او در برنامه‌های تلویزیونی، استادیوم‌ها، ورزشگاه‌ها و فستیوال‌های مختلف اجرا داشته است.
+            </p>
+
+            <p>
+                آراز با علاقه و پشتکار به فعالیت هنری خود ادامه می‌دهد.
+                در این وب‌سایت می‌توانید آهنگ‌ها و آثار او را گوش کنید.
+            </p>
         </div>
     </section>
 
-    <!-- Music -->
     <section id="music">
-        <div class="section-title">
-            <h2>آهنگ‌ها و اجراها</h2>
-        </div>
+        <h2 class="section-title">آهنگ‌های من</h2>
+
         <div class="music-grid">
+
             <div class="music-card">
-                <div class="icon">▶️</div>
-                <h3>یوتیوب</h3>
-                <p>آهنگ‌ها و کلیپ‌های تصویری را در کانال یوتیوب ببینید و گوش دهید</p>
-                <a href="https://www.youtube.com/@Arazalipour" target="_blank" rel="noopener">مشاهده کانال</a>
+                <img class="cover"
+                     src="file_00000000149481f5b66c74e94ef81349.png"
+                     alt="کاور آهنگ Boom Boom">
+
+                <h3>🎵 Boom Boom</h3>
+                <p>آهنگ Boom Boom از آراز علیپور</p>
+
+                <audio controls preload="metadata">
+                    <source src="Boom%20Boom%282%29.mp3" type="audio/mpeg">
+                    مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+                </audio>
             </div>
+
             <div class="music-card">
-                <div class="icon">📸</div>
-                <h3>اینستاگرام</h3>
-                <p>جدیدترین عکس‌ها، ریلزها و آهنگ‌های صوتی و تصویری</p>
-                <a href="https://www.instagram.com/araz.alipour.official" target="_blank" rel="noopener">دنبال کردن</a>
+                <img class="cover"
+                     src="grok_1794394887744.jpg"
+                     alt="کاور آهنگ Sakla Beni">
+
+                <h3>🎵 Sakla Beni</h3>
+                <p>آهنگ Sakla Beni از آراز علیپور</p>
+
+                <audio controls preload="metadata">
+                    <source src="Sakla%20Beni.mp3" type="audio/mpeg">
+                    مرورگر شما از پخش صدا پشتیبانی نمی‌کند.
+                </audio>
             </div>
-            <div class="music-card">
-                <div class="icon">✈️</div>
-                <h3>تلگرام</h3>
-                <p>کانال رسمی برای دریافت آخرین آهنگ‌ها و اخبار</p>
-                <a href="https://t.me/araz_alipour" target="_blank" rel="noopener">عضویت در کانال</a>
+
+        </div>
+    </section>
+
+    <section id="social">
+        <h2 class="section-title">شبکه‌های اجتماعی</h2>
+
+        <div class="social-box">
+            <p>برای دیدن جدیدترین آهنگ‌ها و ویدیوها همراه من باشید.</p>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/araz.alipour.official"
+                   target="_blank" rel="noopener">اینستاگرام</a>
+
+                <a href="https://www.youtube.com/@Arazalipour"
+                   target="_blank" rel="noopener">یوتیوب</a>
+
+                <a href="https://t.me/araz_alipour"
+                   target="_blank" rel="noopener">تلگرام</a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery">
-        <div class="section-title">
-            <h2>گالری عکس و فیلم</h2>
-        </div>
-        <div class="gallery-note">
-            <p>📷 عکس‌های آراز علیپور را می‌توانید در <a href="https://www.instagram.com/araz.alipour.official" target="_blank">اینستاگرام</a> و جستجوی گوگل مشاهده کنید.</p>
-            <p>🎬 فیلم‌ها و کلیپ‌های اجرایی در <a href="https://www.youtube.com/@Arazalipour" target="_blank">یوتیوب</a> و اینستاگرام موجود است.</p>
-            <p style="margin-top: 1.5rem; font-size: 0.9rem;">اگر عکس یا ویدیوی خاصی داری که می‌خوای مستقیماً تو سایت باشه، بفرست تا اضافه کنم.</p>
-        </div>
-    </section>
-
-    <!-- Contact -->
     <section id="contact">
-        <div class="section-title">
-            <h2>تماس با من</h2>
-        </div>
+        <h2 class="section-title">تماس با من</h2>
+
         <div class="contact-box">
             <h3>برای همکاری و رزرو اجرا</h3>
-            <div class="phone-number">
-                <a href="tel:09149113650">۰۹۱۴۹۱۱۳۶۵۰</a>
-            </div>
-            <p style="color: #aaa; margin-bottom: 0.5rem;">یا از طریق شبکه‌های اجتماعی پیام دهید:</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/araz.alipour.official" target="_blank" rel="noopener">
-                    اینستاگرام
-                </a>
-                <a href="https://t.me/araz_alipour" target="_blank" rel="noopener">
-                    تلگرام
-                </a>
-                <a href="https://www.youtube.com/@Arazalipour" target="_blank" rel="noopener">
-                    یوتیوب
-                </a>
-            </div>
+
+            <a class="phone" href="tel:09149113650">
+                ۰۹۱۴۹۱۱۳۶۵۰
+            </a>
+
+            <p>برای ارتباط بیشتر می‌توانید از شبکه‌های اجتماعی نیز پیام دهید.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© ۱۴۰۴ <span class="gold">آراز علیپور</span> — تمامی حقوق محفوظ است</p>
-        <p style="margin-top: 0.4rem; font-size: 0.8rem;">سایت رسمی | Araz Alipour Music</p>
-    </footer>
+</main>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
-        }
-        function closeMenu() {
-            document.getElementById('navLinks').classList.remove('active');
-        }
-    </script>
-    <img src="file_00000000149481f5b66c74e94ef81349.png"
-     alt="کاور آهنگ Boom Boom"
-     style="width:200px; border-radius:12px; display:block; margin:10px auto;">
+<footer>
+    <p>© ۱۴۰۵ <span>آراز علیپور</span> — تمامی حقوق محفوظ است</p>
+    <p>Araz Alipour Official Website</p>
+</footer>
 
-<h3>🎵 آهنگ بوم بوم</h3>
-    <h3>🎵 آهنگ بوم بوم</h3>
-<audio controls>
-  <source src="Boom%20Boom%282%29.mp3" type="audio/mpeg">
-</audio>
-    <h3>🎵 آهنگ بوم بوم</h3>
-<audio controls preload="metadata" style="width:100%; max-width:400px;">
-  <source src="https://araz1388.github.io/index.html-araz-logo.png-/Boom%20Boom%282%29.mp3" type="audio/mpeg">
-</audio>
-    <img src="grok_1794394887744.jpg"
-     alt="کاور آهنگ Sakla Beni"
-     style="width:200px; border-radius:12px; display:block; margin:10px auto;">
-    <h3>🎵 آهنگ Sakla Beni</h3>
-<audio controls preload="metadata" style="width:100%; max-width:400px;">
-  <source src="https://araz1388.github.io/index.html-araz-logo.png-/Sakla%20Beni.mp3" type="audio/mpeg">
-</audio>
-    <h2>آهنگ‌های آراز علیپور</h2>
-<p>
-آراز علیپور خواننده آهنگ‌های Sakla Beni و Boom Boom است.
-در این سایت می‌توانید آهنگ‌ها را آنلاین گوش کنید.
-</p>
 </body>
 </html>
